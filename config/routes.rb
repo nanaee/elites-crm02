@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
-resources :customers
-root "customers#index"
+  devise_for :users
+  resources :customers
+  root "customers#index"
 
 end
